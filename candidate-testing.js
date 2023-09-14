@@ -47,7 +47,7 @@ if (candidateAnswer === correctAnswer){
 function runProgram() {
   askForName();
   // TODO 1.1c: Greet candidate using their name //
-   console.log();
+   console.log("Hello " + candidateName +". You will need to get 4 out of the following 5 questions correct in order to pass this test");
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
