@@ -34,7 +34,7 @@ function gradeQuiz(candidateAnswers) {
 if (candidateAnswer === correctAnswer){
   console.log("Correct! Sally Ride was the first American woman in space");
 } else {
-  console.log("No silly! Sally Ride was the first American woman in space. You answered " + candidateAnswer);
+  console.log("No, silly! Sally Ride was the first American woman in space. You answered: " + candidateAnswer);
 }
 
 
