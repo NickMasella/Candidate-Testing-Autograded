@@ -28,16 +28,21 @@ function askQuestions() { //iterates through the questions array, asking the use
  }
 
 }
-let grade = 0;
+
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   let numCorrectAnswers = 0;
   let grade = 0;
   for (let i = 0; i < questions.length; i++) {
-   
+    if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
+      console.log(`For question ${i + 1} you answered: ${candidateAnswers[i]}. The correct answer is: ${correctAnswers[i]}. Good job!`);
+    } else {
+      console.log(`For question ${i + 1} you answered: ${candidateAnswers[i]}. The correct answer is: ${correctAnswers[i]}. Not a good job!`);
+    }
     if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
       numCorrectAnswers++
+      
     }
   
    }
